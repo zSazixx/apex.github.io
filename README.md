@@ -1,6 +1,6 @@
 # Apex Web Flasher
 
-Static GitHub Pages installer for the LilyGO T-Embed CC1101 Plus.
+Static GitHub Pages installer for Apex v1.1.0 on the LilyGO T-Embed CC1101 Plus. The included image is the firmware build that was just compiled and flashed to the device.
 
 ## Publish with GitHub Pages
 
