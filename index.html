@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061619" />
+    <meta name="description" content="Instalador web de Apex para LilyGO T-Embed CC1101 Plus." />
+    <title>Apex Firmware Flasher</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Apex, inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>APEX<span class="brand-dot">.</span></span>
+        </a>
+        <span class="device-tag"><span class="pulse"></span> T-Embed CC1101 Plus</span>
+      </header>
+
+      <section class="hero" id="inicio">
+        <div class="eyebrow"><span></span> FIRMWARE PERSONALIZADO</div>
+        <h1>Instala <span>Apex</span><br />en tu dispositivo.</h1>
+        <p class="intro">Conecta tu T-Embed por USB, elige su puerto y deja que el instalador haga el resto.</p>
+
+        <div class="flash-card">
+          <div class="card-heading">
+            <div>
+              <p class="card-kicker">VERSIÓN PARA TU PLACA</p>
+              <h2>Apex · T-Embed CC1101 Plus</h2>
+            </div>
+            <span class="version">Apex</span>
+          </div>
+          <div class="divider"></div>
+          <div class="flash-row">
+            <div class="connection-copy">
+              <span class="usb-icon" aria-hidden="true">↯</span>
+              <span><strong>Conexión USB</strong><small>Usa un cable USB con datos</small></span>
+            </div>
+            <esp-web-install-button manifest="./manifest.json">
+              <button slot="activate" class="flash-button" type="button">Conectar y flashear <span aria-hidden="true">→</span></button>
+              <span slot="unsupported" class="browser-warning">Este navegador no admite la instalación web. Abre la página en Chrome o Edge para ordenador.</span>
+              <span slot="not-allowed" class="browser-warning">Abre esta página desde GitHub Pages o desde localhost para usar USB.</span>
+            </esp-web-install-button>
+          </div>
+          <p class="hint">Al pulsar, selecciona el puerto serie del dispositivo. El proceso sustituye el firmware actual.</p>
+          <p class="flash-status" id="flash-status" aria-live="polite"></p>
+        </div>
+
+        <div class="steps" aria-label="Pasos">
+          <div><span>01</span><p>Conecta la placa<br />al ordenador</p></div>
+          <i aria-hidden="true"></i>
+          <div><span>02</span><p>Pulsa conectar<br />y elige el puerto</p></div>
+          <i aria-hidden="true"></i>
+          <div><span>03</span><p>Confirma y espera<br />a que termine</p></div>
+        </div>
+      </section>
+
+      <footer><span>APEX FIRMWARE</span><span>Hecho para explorar.</span></footer>
+    </main>
+  </body>
+</html>

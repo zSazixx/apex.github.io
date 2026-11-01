@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { color-scheme: dark; --cyan: #59f2df; --bg: #061619; --muted: #8ca7a8; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 50% 22%, #103536 0, #091f22 32%, var(--bg) 72%); color: #e8f8f5; font-family: Manrope, system-ui, sans-serif; }
+.shell { width: min(1060px, calc(100% - 44px)); margin: 0 auto; }
+.topbar { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #a5f4e31c; }
+.brand { display: flex; gap: 10px; align-items: center; color: #effffb; text-decoration: none; font-size: 16px; font-weight: 800; letter-spacing: .19em; }
+.brand-mark { display: grid; place-items: center; width: 31px; height: 31px; border: 1px solid var(--cyan); color: var(--cyan); font-size: 16px; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
+.brand-dot { color: var(--cyan); }
+.device-tag { color: #bad0cd; font: 11px 'DM Mono', monospace; letter-spacing: .07em; text-transform: uppercase; }
+.pulse, .eyebrow span { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 13px #59f2df99; }
+.hero { max-width: 760px; margin: 94px auto 0; text-align: center; }
+.eyebrow { color: var(--cyan); font: 11px 'DM Mono', monospace; letter-spacing: .2em; }
+h1 { margin: 20px 0 12px; font-size: clamp(42px, 7vw, 76px); line-height: 1.06; letter-spacing: -.065em; font-weight: 700; }
+h1 span { color: var(--cyan); }
+.intro { max-width: 510px; margin: 0 auto; color: #a9c1bf; font-size: 15px; line-height: 1.8; }
+.flash-card { margin: 45px auto 0; padding: 24px 27px 19px; text-align: left; border: 1px solid #8cefe32c; border-radius: 14px; background: linear-gradient(135deg, #102b2d, #0b2023 70%); box-shadow: 0 24px 80px #0005, inset 0 1px #ffffff09; }
+.card-heading, .flash-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.card-kicker { margin: 0 0 7px; color: #769492; font: 10px 'DM Mono', monospace; letter-spacing: .16em; }
+h2 { margin: 0; font-size: 16px; font-weight: 700; }
+.version { padding: 7px 10px; border: 1px solid #59f2df44; border-radius: 5px; color: var(--cyan); font: 10px 'DM Mono', monospace; letter-spacing: .09em; }
+.divider { height: 1px; margin: 21px 0; background: #b5f8ed17; }
+.connection-copy { display: flex; align-items: center; gap: 12px; }
+.usb-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; color: var(--cyan); background: #59f2df12; font-size: 24px; }
+.connection-copy strong, .connection-copy small { display: block; }
+.connection-copy strong { font-size: 12px; }
+.connection-copy small { margin-top: 4px; color: #87a09e; font-size: 11px; }
+esp-web-install-button { display: block; }
+.flash-button { min-height: 46px; padding: 0 20px; border: 0; border-radius: 7px; background: var(--cyan); color: #06201e; font: 700 12px Manrope, sans-serif; cursor: pointer; transition: transform .16s ease, box-shadow .16s ease; }
+.flash-button:hover { transform: translateY(-1px); box-shadow: 0 8px 24px #59f2df30; }
+.flash-button span { margin-left: 11px; font-size: 16px; }
+.hint { margin: 17px 0 0; color: #789390; font-size: 10px; line-height: 1.6; }
+.flash-status { min-height: 16px; margin: 8px 0 0; color: var(--cyan); font-size: 11px; }
+.browser-warning { display: block; max-width: 285px; color: #ffd28a; font-size: 11px; line-height: 1.5; }
+.steps { display: flex; align-items: center; justify-content: center; gap: 23px; margin: 47px auto 0; }
+.steps div { display: flex; align-items: center; gap: 10px; text-align: left; }
+.steps div > span { color: var(--cyan); font: 10px 'DM Mono', monospace; }
+.steps p { margin: 0; color: #9db4b1; font-size: 10px; line-height: 1.65; }
+.steps i { width: 35px; height: 1px; background: #59f2df31; }
+footer { display: flex; justify-content: space-between; margin-top: 88px; padding: 20px 0 24px; border-top: 1px solid #a5f4e31c; color: #708986; font: 9px 'DM Mono', monospace; letter-spacing: .12em; }
+@media (max-width: 620px) { .shell { width: min(100% - 32px, 500px); } .topbar { height: 70px; } .device-tag { max-width: 145px; text-align: right; line-height: 1.6; } .hero { margin-top: 66px; } .flash-card { padding: 20px 17px 15px; } .flash-row { align-items: flex-start; flex-direction: column; } .flash-button { width: 100%; } esp-web-install-button { width: 100%; } .steps { align-items: flex-start; gap: 10px; } .steps i { width: 12px; margin-top: 14px; } .steps div { gap: 6px; } .steps p { font-size: 9px; } footer { margin-top: 62px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
