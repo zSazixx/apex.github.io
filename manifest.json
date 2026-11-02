@@ -1,13 +1,13 @@
 {
   "name": "Apex Firmware",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "./firmware/Apex-T-Embed-CC1101-Plus.bin?v=1.2.0",
+          "path": "./firmware/Apex-T-Embed-CC1101-Plus.bin?v=1.3.0",
           "offset": 0
         }
       ]
