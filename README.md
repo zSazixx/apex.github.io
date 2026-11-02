@@ -1,10 +1,10 @@
 # Apex Web Flasher
 
-Static GitHub Pages installer for Apex v1.1.0 on the LilyGO T-Embed CC1101 Plus. The included image is the firmware build that was just compiled and flashed to the device.
+Static installer page for the custom Apex firmware on the LilyGO T-Embed CC1101 Plus. The firmware image in `firmware/Apex-T-Embed-CC1101-Plus.bin` was built from the Apex repository for this page (site manifest version 1.2.0).
 
 ## Publish with GitHub Pages
 
-Upload the entire `web-flasher` folder to a repository (or move its contents to the repository root), and place the matching firmware at `firmware/Apex-T-Embed-CC1101-Plus.bin`. The `manifest.json` uses that relative path. In the repository settings, enable GitHub Pages for the branch and folder containing `index.html`.
+Upload the entire `web-flasher` folder to a repository (or move its contents to the repository root). Keep the firmware in `firmware/Apex-T-Embed-CC1101-Plus.bin`; `manifest.json` points to it with a relative path. In repository settings, enable GitHub Pages for the branch and folder containing `index.html`.
 
 ## Install
 
